@@ -1,0 +1,214 @@
+body {
+    background-color: #f0d8d8;
+    font-family: gotham; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    margin-top: 30px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.question {
+    margin-top: 20px;
+}
+
+.nav {
+    list-style: none;
+    background: darkslateblue;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 1000 px;
+    margin: 10px;
+    border-radius: 4px;
+}
+.nav li {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 20px;
+}
+.nav li:first-child {
+    margin-right: auto;
+    margin-top: 5px;
+}
+.nav li a:first-child {
+    text-decoration: none;
+    color: white;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+table td, table th {
+    padding: 12px 15px;
+    font-size: 22px;  
+}
+table thead {
+    background-color: darkblue;
+    color: white;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #0373fc;
+    color: #f0f4fa;
+}
+table tbody tr:nth-child(even) {
+    background-color: #6c18c7;
+    color: #f0f4fa;
+}
+table tbody tr:nth-child(odd):hover {
+    background-color: #58a2fc;
+}
+table tbody tr:nth-child(even):hover {
+    background-color: #a364e8;
+}
+
+button {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form {
+    border: 1px solid grey;
+    width: auto;
+    padding: 10px 70px 10px 70px;
+    background-image: linear-gradient(to right, blue , purple);
+    border-radius: 7px;
+    color: white;
+}
+.formloginreg {
+    border: 1px solid grey;
+    width: auto;
+    padding: 10px 70px 10px 70px;
+    background-image: linear-gradient(to right, lightblue , blue);
+    border-radius: 7px;
+    color: white;
+}
+
+.accessden {
+   width: 900px;
+   margin: auto;
+}
+
+input {
+    text-align: center;
+}
+.back {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.alert {
+    width: auto;
+    height: auto;
+}
+
+/*responsive*/
+@media(max-width: 1000px) {
+    table {
+        border: none;
+    }
+    
+    table thead {
+        display: none;
+    }
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+    table tr {
+        margin-bottom: 15px;
+    }
+    table td {
+        text-align: right;
+        padding-left: 40%;
+        text-align: right;
+        position: relative;
+    }
+    table td::before {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        vertical-align: middle;
+    }
+    
+    .div-parent {
+        margin-right: 100px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+    }
+    .div-parent > .div-child:first-child {
+        margin-right: 5px;
+    }
+    
+    td:nth-of-type(1):before { content: "ID:"; }
+    td:nth-of-type(2):before { content: "First name:"; }
+    td:nth-of-type(3):before { content: "Last name:"; }
+    td:nth-of-type(4):before { content: "Email:"; }
+    td:nth-of-type(5):before { content: "Phone number:"; }
+    td:nth-of-type(6):before { content: "Description:"; }
+}
+
+@media(max-width: 400px) {
+    table td, table td::before {
+        font-size: 12px;
+    }
+    
+    griddy {
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .nav {
+        justify-content: space-around;
+    }
+    .nav li:first-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        -webkit-flex-flow: column wrap;
+        padding: 0;
+        width: 90%;
+        
+    }
+    .nav li {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
